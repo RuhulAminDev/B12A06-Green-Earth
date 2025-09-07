@@ -76,6 +76,49 @@
     color: #1F2937;
     margin-bottom: 20px;
 }
+/* About the Campaign */
+main{
+  background-color: #F5FEFA;
+}
+.about{
+padding: 80px 180px;
+}
+.about h2{
+  text-align: center;
+  font-weight: 600;
+  font-size: 25px;
+  color: #1F2937;
+}
+.about-container{
+  margin-top: 30px;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.about-image img{
+  width: 380px;
+  border-radius: 10px;
+}
+.about-text p{
+  font-size: 15px;
+  color: #1F2937;
+}
+.about-text ul{
+    font-size: 15px;
+  color: #1F2937;
+  padding: 20px;
+  margin-top: 10px;
+}
+/* Our Impact */
+.impact{
+  background-color: #CFF0DC;
+}
+
+
+
+
+
 
 
 
@@ -107,6 +150,18 @@ display: none;
 .banner-middle p{
     font-size: 12px;
 }
+/* About the Campaign */
+.about{
+padding: 50px 100px;
+}
+.about-container{
+  flex-direction: column;
+}
+.about-image img{
+  width: 100%;
+  max-width: 280px;
+}
+
 
 
 }
