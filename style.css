@@ -1,6 +1,6 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 /* shared font */
 
@@ -11,193 +11,243 @@
   font-style: normal;
 }
 
-
 /* shared btn */
-.btn{
-    background-color: #FACC15;
-    padding: 20px;
-    border-radius: 999px;
-    border: none;
-    color: #15803D;
-    font-size: 20px;
+.btn {
+  background-color: #facc15;
+  padding: 20px;
+  border-radius: 999px;
+  border: none;
+  color: #15803d;
+  font-size: 20px;
 }
-
 
 /* style css */
 
 /* navbar style */
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 24px;
-    background-color: #15803D;
-    color: white;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  background-color: #15803d;
+  color: white;
 }
-.navbar .logo{
-    font-size: 22px;
-    font-weight: bold;
+.navbar .logo {
+  font-size: 22px;
+  font-weight: bold;
 }
-.navbar .menu{
-    display: flex;
-    gap: 24px;
+.navbar .menu {
+  display: flex;
+  gap: 24px;
 }
-.navbar .menu a{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
+.navbar .menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
 }
 /* banner style */
-.banner{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    gap: 50px;
-    background-color: #CFF0DC;
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 50px;
+  background-color: #cff0dc;
 }
-.banner img{
-    width: 320px;
-    margin: 0;
-    padding: 0;
-    display: block;
+.banner img {
+  width: 320px;
+  margin: 0;
+  padding: 0;
+  display: block;
 }
-.banner-middle{
-    padding: 20px;
-    text-align: center;
+.banner-middle {
+  padding: 20px;
+  text-align: center;
 }
-.banner-middle h1{
-    font-size: 30px;
-    font-weight: bold;
-    color: #1F2937;
-    margin-bottom: 8px;
+.banner-middle h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 8px;
 }
-.banner-middle p{
-    font-size: 15px;
-    color: #1F2937;
-    margin-bottom: 20px;
+.banner-middle p {
+  font-size: 15px;
+  color: #1f2937;
+  margin-bottom: 20px;
 }
 /* About the Campaign */
-main{
-  background-color: #E8F8EF;
+main {
+  background-color: #e8f8ef;
 }
-.about{
-padding: 80px 180px;
+.about {
+  padding: 80px 180px;
 }
-.about h2{
+.about h2 {
   text-align: center;
   font-weight: 600;
   font-size: 25px;
-  color: #1F2937;
+  color: #1f2937;
 }
-.about-container{
+.about-container {
   margin-top: 30px;
   display: flex;
   gap: 40px;
   justify-content: center;
   align-items: center;
 }
-.about-image img{
+.about-image img {
   width: 380px;
   border-radius: 10px;
 }
-.about-text p{
+.about-text p {
   font-size: 15px;
-  color: #1F2937;
+  color: #1f2937;
 }
-.about-text ul{
-    font-size: 15px;
-  color: #1F2937;
+.about-text ul {
+  font-size: 15px;
+  color: #1f2937;
   padding: 20px;
   margin-top: 10px;
 }
 /* Our Impact */
-.impact{
-  background-color: #CFF0DC;
+.impact {
+  background-color: #cff0dc;
   padding: 50px 100px;
   text-align: center;
 }
-.impact h2{
+.impact h2 {
   font-size: 25px;
   font-weight: 600;
-  color: #1F2937;
+  color: #1f2937;
   margin-bottom: 25px;
 }
-.impact-cards{
+.impact-cards {
   display: flex;
   gap: 30px;
   justify-content: space-between;
   align-content: center;
 }
-.impact-card{
+.impact-card {
   background-color: white;
   padding: 40px;
   border-radius: 12px;
   width: 340px;
 }
-.impact-card h3{
+.impact-card h3 {
   font-size: 24px;
-  color: #1F2937;
+  color: #1f2937;
   margin-bottom: 12px;
 }
-.impact-card p{
+.impact-card p {
   font-size: 16px;
-  color: #1F2937;
+  color: #1f2937;
 }
-
-
+/* plant a tree today section */
+.donate {
+  padding: 60px 300px;
+  background-color: #166534;
+  text-align: center;
+}
+.donate h2 {
+  font-weight: 600;
+  font-size: 25px;
+  color: white;
+  margin-bottom: 35px;
+}
+.donate-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #15803d;
+}
+.donate-form input {
+  padding: 12px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+}
+.donate-form button {
+  background-color: #facc15;
+  border: none;
+  color: #15803d;
+  font-size: 16px;
+  padding: 12px;
+  font-weight: 500;
+  border-radius: 999px;
+  cursor: pointer;
+  margin-top: 15px;
+}
 
 
 
 
 
 /* mobile responsive */
-@media screen and (max-width:576px) {
-    /* navbar style */
-    .navbar{
-        flex-direction: column;
-        gap: 20px;
-    }
-    .btn{
-    background-color: #FACC15;
+@media screen and (max-width: 576px) {
+  /* navbar style */
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .btn {
+    background-color: #facc15;
     padding: 16px;
     border-radius: 999px;
     border: none;
-    color: #15803D;
+    color: #15803d;
     font-size: 16px;
-}
-/* banner style */
-.banner{
+  }
+  /* banner style */
+  .banner {
     flex-direction: column;
-}
-.banner img{
-display: none;
-}
-.banner-middle h1{
+  }
+  .banner img {
+    display: none;
+  }
+  .banner-middle h1 {
     font-size: 25px;
-}
-.banner-middle p{
+  }
+  .banner-middle p {
     font-size: 12px;
-}
-/* About the Campaign */
-.about{
-padding: 50px 100px;
-}
-.about-container{
-  flex-direction: column;
-}
-.about-image img{
-  width: 100%;
-  max-width: 280px;
-}
-/* Our Impact */
-.impact-cards{
-  flex-direction: column;
-  align-items: center;
-}
-.impact-card{
-max-width: 340px;
-  width: 100%;
-}
+  }
+  /* About the Campaign */
+  .about {
+    padding: 50px 100px;
+  }
+  .about-container {
+    flex-direction: column;
+  }
+  .about-image img {
+    width: 100%;
+    max-width: 280px;
+  }
+  /* Our Impact */
+  .impact-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .impact-card {
+    max-width: 340px;
+    width: 100%;
+  }
+  /* plant a tree today section */
+  .donate {
+    padding: 30px 50px;
+  }
+  .donate h2 {
+    font-size: 20px;
+  }
+  .donate-form input {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  .donate-form button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
 
 
 }
