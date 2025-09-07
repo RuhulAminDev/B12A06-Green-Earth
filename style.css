@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* shared font */
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+}
+
+
+/* shared btn */
+.btn{
+    background-color: #FACC15;
+    padding: 20px;
+    border-radius: 999px;
+    border: none;
+    color: #15803D;
+    font-size: 20px;
+}
+
+
+/* style css */
+
+/* navbar style */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    background-color: #15803D;
+    color: white;
+}
+.navbar .logo{
+    font-size: 22px;
+    font-weight: bold;
+}
+.navbar .menu{
+    display: flex;
+    gap: 24px;
+}
+.navbar .menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+/* banner style */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 50px;
+    background-color: #CFF0DC;
+}
+.banner img{
+    width: 320px;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.banner-middle{
+    padding: 20px;
+    text-align: center;
+}
+.banner-middle h1{
+    font-size: 30px;
+    font-weight: bold;
+    color: #1F2937;
+    margin-bottom: 8px;
+}
+.banner-middle p{
+    font-size: 15px;
+    color: #1F2937;
+    margin-bottom: 20px;
+}
+
+
+
+/* mobile responsive */
+@media screen and (max-width:576px) {
+    /* navbar style */
+    .navbar{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .btn{
+    background-color: #FACC15;
+    padding: 16px;
+    border-radius: 999px;
+    border: none;
+    color: #15803D;
+    font-size: 16px;
+}
+/* banner style */
+.banner{
+    flex-direction: column;
+}
+.banner img{
+display: none;
+}
+.banner-middle h1{
+    font-size: 25px;
+}
+.banner-middle p{
+    font-size: 12px;
+}
+
+
+}
