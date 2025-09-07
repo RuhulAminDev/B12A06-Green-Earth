@@ -78,7 +78,7 @@
 }
 /* About the Campaign */
 main{
-  background-color: #F5FEFA;
+  background-color: #E8F8EF;
 }
 .about{
 padding: 80px 180px;
@@ -113,8 +113,36 @@ padding: 80px 180px;
 /* Our Impact */
 .impact{
   background-color: #CFF0DC;
+  padding: 50px 100px;
+  text-align: center;
 }
-
+.impact h2{
+  font-size: 25px;
+  font-weight: 600;
+  color: #1F2937;
+  margin-bottom: 25px;
+}
+.impact-cards{
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  align-content: center;
+}
+.impact-card{
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  width: 340px;
+}
+.impact-card h3{
+  font-size: 24px;
+  color: #1F2937;
+  margin-bottom: 12px;
+}
+.impact-card p{
+  font-size: 16px;
+  color: #1F2937;
+}
 
 
 
@@ -161,7 +189,15 @@ padding: 50px 100px;
   width: 100%;
   max-width: 280px;
 }
-
+/* Our Impact */
+.impact-cards{
+  flex-direction: column;
+  align-items: center;
+}
+.impact-card{
+max-width: 340px;
+  width: 100%;
+}
 
 
 }
