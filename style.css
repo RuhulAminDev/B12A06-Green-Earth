@@ -14,11 +14,11 @@
 /* shared btn */
 .btn {
   background-color: #facc15;
-  padding: 20px;
+  padding: 18px;
   border-radius: 999px;
   border: none;
   color: #15803d;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 /* style css */
@@ -138,11 +138,11 @@ main {
 }
 .impact-card:hover {
   background-color: #ade5c4;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
 }
 .impact-card h3 {
   font-size: 24px;
-  color: #15803D;
+  color: #15803d;
   margin-bottom: 12px;
 }
 .impact-card p {
@@ -169,7 +169,8 @@ main {
   padding: 40px;
   background-color: #15803d;
 }
-.donate-form input, .donate-seclect {
+.donate-form input,
+.donate-seclect {
   padding: 12px;
   font-size: 18px;
   border-radius: 5px;
@@ -186,18 +187,159 @@ main {
   border-radius: 999px;
   margin-top: 15px;
 }
-/* footr copyright section */
-.copyright-section{
-  background-color: #14532D;
+/* footer copyright section */
+.copyright-section {
+  background-color: #14532d;
   text-align: center;
   padding: 20px;
 }
-.copyright-section p{
-font-size: 12px;
+.copyright-section p {
+  font-size: 12px;
   color: white;
 }
-
-
+/* choose your tree section */
+.trees {
+  padding: 50px 65px;
+}
+.trees h2 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+  color: #1f2937;
+  margin-bottom: 30px;
+}
+.trees-container {
+  display: grid;
+  grid-template-columns: 180px 1fr 180px;
+  grid-template-areas: "categories cards cart";
+  justify-content: space-between;
+  gap: 20px;
+}
+.categories {
+  grid-area: categories;
+}
+.tree-cards {
+  grid-area: cards;
+}
+.cart {
+  grid-area: cart;
+}
+.tree-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.card img {
+  width: 100%;
+  max-width: 280px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+.card h4 {
+  font-weight: 600;
+  font-size: 14px;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+.card p {
+  font-size: 12px;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+.categori-and-price-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.categori-and-price-container .name {
+  background-color: #c0ecd0;
+  border-radius: 500px;
+  color: #15803d;
+  padding: 4px 12px;
+  font-size: 12px;
+}
+.categori-and-price-container .rates {
+  font-weight: 600;
+  font-size: 12px;
+  color: #1f2937;
+}
+.card button {
+  border-radius: 999px;
+  background-color: #15803d;
+  color: white;
+  font-size: 12px;
+  border: none;
+  padding: 8px 12px;
+  width: 100%;
+}
+.card {
+  padding: 12px;
+  background-color: white;
+  border-radius: 8px;
+}
+.categories h3 {
+  margin-bottom: 12px;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 600;
+}
+.categories ul li {
+  list-style: none;
+  padding: 8px;
+}
+.categories ul a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  color: #1f2937;
+  font-size: 15px;
+}
+.categories ul a:hover {
+  background-color: green;
+  color: white;
+}
+.cart {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 10px;
+}
+.cart h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 8px;
+}
+.cart-container h4 {
+  font-size: 14px;
+  color: #1f2937;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.cart-container p {
+  font-size: 11px;
+  color: darkgray;
+  font-weight: 600;
+}
+.cross {
+  font-size: 10px;
+}
+.cart-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0fdf4;
+  border-radius: 8px;
+  padding: 8px 10px;
+  margin-bottom: 10px;
+}
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #1f2937;
+}
 
 /* mobile responsive */
 @media screen and (max-width: 576px) {
@@ -244,8 +386,8 @@ font-size: 12px;
     align-items: center;
   }
   .about h2 {
-  font-size: 20px;
-}
+    font-size: 20px;
+  }
   .impact-card {
     max-width: 340px;
     width: 100%;
@@ -257,7 +399,8 @@ font-size: 12px;
   .donate h2 {
     font-size: 20px;
   }
-  .donate-form input, .donate-seclect {
+  .donate-form input,
+  .donate-seclect {
     padding: 12px;
     font-size: 16px;
     border-radius: 5px;
@@ -266,7 +409,20 @@ font-size: 12px;
     font-size: 14px;
     padding: 10px;
   }
-
-
-
+  /* choose your tree section */
+  .categories ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .tree-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .trees-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "categories"
+      "cart"
+      "cards";
+  }
 }
