@@ -176,10 +176,6 @@ main {
   border: none;
   outline: none;
 }
-.donate-select option:hover{
-  background-color: blue;
-  color: white;
-}
 .donate-form button {
   background-color: #facc15;
   border: none;
@@ -261,7 +257,7 @@ font-size: 12px;
   .donate h2 {
     font-size: 20px;
   }
-  .donate-form input {
+  .donate-form input, .donate-seclect {
     padding: 12px;
     font-size: 16px;
     border-radius: 5px;
