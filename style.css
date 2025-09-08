@@ -231,7 +231,9 @@ main {
 }
 .card img {
   width: 100%;
-  max-width: 280px;
+  max-width: 380px;
+  height: auto;
+  max-height: 380px;
   margin-bottom: 10px;
   border-radius: 8px;
 }
@@ -371,7 +373,7 @@ main {
   }
   /* About the Campaign */
   .about {
-    padding: 50px 80px;
+    padding: 20px 50px;
   }
   .about-container {
     flex-direction: column;
@@ -410,13 +412,17 @@ main {
     padding: 10px;
   }
   /* choose your tree section */
+  .trees {
+  padding: 20px 30px;
+}
   .categories ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* flex-wrap: wrap; */
+    gap: 5px;
   }
   .tree-cards {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
   .trees-container {
     grid-template-columns: 1fr;
