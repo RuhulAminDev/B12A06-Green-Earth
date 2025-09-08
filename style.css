@@ -45,6 +45,10 @@
   color: white;
   font-size: 20px;
 }
+.navbar .menu a:hover {
+  text-decoration: underline;
+  text-decoration-color: rgb(195, 79, 79);
+}
 /* banner style */
 .banner {
   display: flex;
@@ -132,9 +136,13 @@ main {
   border-radius: 12px;
   width: 340px;
 }
+.impact-card:hover {
+  background-color: #ade5c4;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+}
 .impact-card h3 {
   font-size: 24px;
-  color: #1f2937;
+  color: #15803D;
   margin-bottom: 12px;
 }
 .impact-card p {
@@ -161,11 +169,16 @@ main {
   padding: 40px;
   background-color: #15803d;
 }
-.donate-form input {
+.donate-form input, .donate-seclect {
   padding: 12px;
-  font-size: 20px;
+  font-size: 18px;
   border-radius: 5px;
   border: none;
+  outline: none;
+}
+.donate-select option:hover{
+  background-color: blue;
+  color: white;
 }
 .donate-form button {
   background-color: #facc15;
@@ -175,11 +188,18 @@ main {
   padding: 12px;
   font-weight: 500;
   border-radius: 999px;
-  cursor: pointer;
   margin-top: 15px;
 }
-
-
+/* footr copyright section */
+.copyright-section{
+  background-color: #14532D;
+  text-align: center;
+  padding: 20px;
+}
+.copyright-section p{
+font-size: 12px;
+  color: white;
+}
 
 
 
@@ -213,20 +233,23 @@ main {
   }
   /* About the Campaign */
   .about {
-    padding: 50px 100px;
+    padding: 50px 80px;
   }
   .about-container {
     flex-direction: column;
   }
   .about-image img {
     width: 100%;
-    max-width: 280px;
+    max-width: 290px;
   }
   /* Our Impact */
   .impact-cards {
     flex-direction: column;
     align-items: center;
   }
+  .about h2 {
+  font-size: 20px;
+}
   .impact-card {
     max-width: 340px;
     width: 100%;
