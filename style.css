@@ -276,6 +276,8 @@ main {
 }
 .card {
   padding: 12px;
+  height: 340px;
+  max-height: 380px;
   background-color: white;
   border-radius: 8px;
 }
