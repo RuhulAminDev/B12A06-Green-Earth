@@ -416,11 +416,11 @@ main {
   }
   /* choose your tree section */
   .trees {
-  padding: 20px 30px;
-}
+    padding: 20px 30px;
+  }
   .categories ul {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     /* flex-wrap: wrap; */
     gap: 5px;
   }
