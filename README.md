@@ -1,169 +1,86 @@
-## WELCOME TO ( সহজ সরল সিম্পল ) ASSIGNMENT-006
+# Assignment Questions & Answers
 
-### 📅 Deadline For 60 marks: 9th September, 2025 (11:59 pm ⏱️)
+### 1) What is the difference between `var`, `let`, and `const`?
 
-### 📅 Deadline For 50 marks : 13th September , 2025 (6:00 pm⏱️)
+- **var**
 
-### 📅 Deadline For 30 marks: Any time after 13the September , 2025 (6:01 pm⏱️).
+  - Function-scoped (available only inside the function where it is declared).
+  - Can be re-declared and updated.
+  - Hoisted with `undefined`.
 
----
-# Green Earth
+- **let**
 
+  - Block-scoped (available only inside the block `{}` where it is declared).
+  - Cannot be re-declared in the same scope, but can be updated.
+  - Hoisted but not initialized (gives "Temporal Dead Zone" error if used before declaration).
 
-## Private Repository: https://classroom.github.com/a/nVZrg5R9 
+- **const**
 
-## Alternative Private Repository: https://classroom.github.com/a/KCGI14ST 
+  - Block-scoped like `let`.
+  - Cannot be re-declared or updated (value stays constant).
+  - Must be initialized at the time of declaration.
 
-## Alternative Private Repository: https://classroom.github.com/a/JMuIYqgK 
+  ### 2) What is the difference between `map()`, `forEach()`, and `filter()`?
 
+- **map()**
 
----
-🌴 API Endpoints
----
-1. Get 🌴All Plants
-```bash
-https://openapi.programming-hero.com/api/plants
-```
+  - Returns a **new array** with transformed values.
+  - Always returns something.
+  - Example: doubling all numbers in an array.
 
-2. Get 🌴All categories <br/>
-```bash
-https://openapi.programming-hero.com/api/categories
-```
+- **forEach()**
 
+  - Iterates over each element but does **not return** a new array.
+  - Used when we only want to perform side-effects like logging or updating values.
 
-3. Get 🌴plants by categories <br/>
-```bash
-https://openapi.programming-hero.com/api/category/${id}
-```
+- **filter()**
 
-```bash
-https://openapi.programming-hero.com/api/category/1
-```
+  - Returns a **new array** with elements that pass the given condition.
+  - Example: getting only even numbers from an array.
 
-4. Get 🌴Plants Detail <br/>
+### 3) What are arrow functions in ES6?
 
-```bash
-https://openapi.programming-hero.com/api/plant/${id}
-```
+- Arrow functions are a shorter syntax for writing functions introduced in ES6.  
+- They do not have their own `this` context (lexical `this` binding).  
 
-```bash
-https://openapi.programming-hero.com/api/plant/1
-```
----
+Example:
+ js
 
+function add(a, b) {
+  return a + b;
+}
 
+const add = (a, b) => a + b;
 
+### 4) How does destructuring assignment work in ES6?
 
-## ✅ Main Requirements 
+- Destructuring allows us to unpack values from arrays or properties from objects into separate variables.
 
-#### 1) Navbar
+Example with arrays:
 
-- Website **logo/name** on the **left**  
-- **Menu items** in the **center** 
-- **Plant a Tree button** on the **right** 
+        const numbers = [10, 20, 30];
+        const [a, b, c] = numbers;
+Example with objects:
 
-#### 2) Banner 
-- A **background image**  
-- A **title** and **subtitle**  
-- A **centered button**  
+        const person = { name: "Ruhul", age: 22 };
+        const { name, age } = person;
 
-#### 3) About Campaign
-- **Section heading**  
-- **Image on the left**, **text on the right**  
+### 5) Explain template literals in ES6. How are they different from string concatenation?
 
-#### 4) Our Impact Section 
-- Show **3 cards** with campaign **statistics**  
+- Template literals use backticks (`) instead of quotes.
 
-#### 5) Plant a Tree Today Section & Footer
-- **Form**: Name, Email, Number of Trees  
-- **Footer** with copyright info 
+- They allow embedding variables and expressions using ${}.
 
-#### 6) Responsiveness 
-- Website must be **mobile responsive**  
+- They support multi-line strings easily.
 
----
-#### 7) Create a README file to answer the following question-
+Example:
+        const name = "Ruhul";
+        const age = 22;
+        const str1 = "My name is " + name + " and I am " + age + " years old.";
 
+        const str2 = `My name is ${name} and I am ${age} years old.`;
 
-#### 1) What is the difference between var, let, and const?
+Difference:
+- Concatenation uses + operator, template literals use ${} inside backticks.
 
-#### 2) What is the difference between map(), forEach(), and filter()? 
-
-#### 3) What are arrow functions in ES6?
-
-#### 4) How does destructuring assignment work in ES6?
-
-#### 5) Explain template literals in ES6. How are they different from string concatenation?
-
-## ⚙️ Functionalities 
-
-1) Category Loading 
-Load Tree Categories dynamically on the left side.
-
-2) Category Click → Tree Data 
-On clicking a category: load trees of that category.
-
-Display in a 3-column card layout.
-
-3) Card Contents 
- Each card includes:
-
-        - Image
-
-        -  Name
-
-        - Short description
-
-        - Category
-
-        - Price
-
-        - Add to Cart button
-
-4) Modal on Card Click 
-Clicking a tree name on a card opens a modal with full tree details.
-
-
-##  🧪 Challenges 
-
-
-    1) Add to Cart 
-    Clicking Add to Cart: - Adds the tree to Cart List
-                          - Shows tree name 
-
-    2) Total Calculation 
-    Calculate total price of trees in cart.
-
-    3) Remove from Cart 
-    Clicking ❌ removes tree and deducts price from total.
-
-    4) Loading Spinner
-    Show spinner while data is loading.
-
-    5) Active Button State 
-    Highlight active category button when selected.
-
-
-
-🧰 Technology Stack:
-        
-        HTML
-
-        CSS (Vanilla / Tailwind / DaisyUI)
-
-        JavaScript (Vanilla only, no frameworks)
-
-📌 Rules
-✅ At least 5 meaningful commits
-
-❌ No dummy text or Lorem Ipsum — must use relevant content
-
-
-
-
-
-## 🔗 Submission
-- **Live Link :** YOUR_DEPLOYED_URL_HERE  
-- **GitHub Private Repository:** YOUR_REPO_URL_HERE  
-
----
+- Template literals are more readable, especially for multi-line strings.

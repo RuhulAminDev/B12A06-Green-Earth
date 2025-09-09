@@ -200,13 +200,13 @@
                 });
 
                 const closeBtn = document.createElement("button");
-                closeBtn.textContent = "Close";
+                closeBtn.textContent = "❌";
                 closeBtn.style.position = "absolute";
                 closeBtn.style.right = "12px";
                 closeBtn.style.top = "12px";
-                closeBtn.style.padding = "¨6px 10px";
+                closeBtn.style.padding = "¨8px 12px";
                 closeBtn.style.border = "none";
-                closeBtn.style.background = "#e74c3c";
+                // closeBtn.style.background = "#e74c3c";
                 closeBtn.style.color = "white";
                 closeBtn.style.borderRadius = "6px";
                 closeBtn.style.cursor = "pointer";
@@ -245,7 +245,7 @@
                 <p><strong>Category:</strong> ${escapeHtml(cat)}</p>
                 <p><strong>Price:</strong> ৳${price}</p>
                 <div style="margin-top:12px;">
-                    <button class="modal-add-to-cart" style="background:#15803d; color:white; border:none; padding:10px;border-radius:8px; cursor:pointer;">Add to Cart</button></button>
+                    <button class="modal-add-to-cart" style="background:#15803d; color:white; border:none; padding:10px;border-radius:8px; cursor:pointer;">Add to Cart</button>
                 </div>
                 </div>
                 </div>
